@@ -1,2 +1,0 @@
-# solana-hello-world
-# adventofcode

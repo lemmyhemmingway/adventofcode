@@ -1,0 +1,15 @@
+/home/yasin/code/adventofcode/2015/csharp-solutions/day1/bin/Debug/net6.0/day1
+/home/yasin/code/adventofcode/2015/csharp-solutions/day1/bin/Debug/net6.0/day1.deps.json
+/home/yasin/code/adventofcode/2015/csharp-solutions/day1/bin/Debug/net6.0/day1.runtimeconfig.json
+/home/yasin/code/adventofcode/2015/csharp-solutions/day1/bin/Debug/net6.0/day1.dll
+/home/yasin/code/adventofcode/2015/csharp-solutions/day1/bin/Debug/net6.0/ref/day1.dll
+/home/yasin/code/adventofcode/2015/csharp-solutions/day1/bin/Debug/net6.0/day1.pdb
+/home/yasin/code/adventofcode/2015/csharp-solutions/day1/obj/Debug/net6.0/day1.csproj.AssemblyReference.cache
+/home/yasin/code/adventofcode/2015/csharp-solutions/day1/obj/Debug/net6.0/day1.GeneratedMSBuildEditorConfig.editorconfig
+/home/yasin/code/adventofcode/2015/csharp-solutions/day1/obj/Debug/net6.0/day1.AssemblyInfoInputs.cache
+/home/yasin/code/adventofcode/2015/csharp-solutions/day1/obj/Debug/net6.0/day1.AssemblyInfo.cs
+/home/yasin/code/adventofcode/2015/csharp-solutions/day1/obj/Debug/net6.0/day1.csproj.CoreCompileInputs.cache
+/home/yasin/code/adventofcode/2015/csharp-solutions/day1/obj/Debug/net6.0/day1.dll
+/home/yasin/code/adventofcode/2015/csharp-solutions/day1/obj/Debug/net6.0/ref/day1.dll
+/home/yasin/code/adventofcode/2015/csharp-solutions/day1/obj/Debug/net6.0/day1.pdb
+/home/yasin/code/adventofcode/2015/csharp-solutions/day1/obj/Debug/net6.0/day1.genruntimeconfig.cache

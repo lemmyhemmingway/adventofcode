@@ -9,4 +9,3 @@ def test_part1():
 def test_part2():
     result = day1.part2()
     assert result == 1794
-

@@ -1,7 +1,4 @@
-SAMPLE_INPUT = [
-        [2,3,4],
-        [1,1,10]
-    ]
+SAMPLE_INPUT = [[2, 3, 4], [1, 1, 10]]
 
 FILENAME = "../inputs/2015/day2.txt"
 
@@ -12,26 +9,28 @@ def _parse(filename):
 
     dimensions = []
     for line in data:
-        l,w,h = line.strip().split('x')
-        dimensions.append([int(l),int(w),int(h)])
+        length, width, height = line.strip().split("x")
+        dimensions.append([int(length), int(width), int(height)])
 
     return dimensions
+
 
 def part1():
     total = 0
     for item in _parse(FILENAME):
-        l,w,h = sorted(item)
-        min_area = l * w
-        wrapping_paper = 2 * (l*w + w*h + h*l)
+        length, width, height = sorted(item)
+        min_area = length * width
+        wrapping_paper = 2 * (length * width + width * height + height * length)
         total += min_area + wrapping_paper
     return total
+
 
 def part2():
     total = 0
     for item in _parse(FILENAME):
-        l,w,h = sorted(item)
-        ribbon = 2 * (l + w)
-        bow = l * w * h
+        length, width, height = sorted(item)
+        ribbon = 2 * (length + width)
+        bow = length * width * height
         total += ribbon + bow
     return total
 
@@ -39,4 +38,3 @@ def part2():
 if __name__ == "__main__":
     print("part1")
     print("part2")
-

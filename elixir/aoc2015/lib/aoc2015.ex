@@ -13,6 +13,6 @@ defmodule Aoc2015 do
 
   """
   def hello do
-    :world
+    Day1.part1()
   end
 end

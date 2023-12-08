@@ -12,6 +12,7 @@ def _read_input(input_file: str = INPUT_FILE):
         ]
     return data
 
+
 def part1(data: List[List[int]]) -> int:
     total = 0
     for item in data:

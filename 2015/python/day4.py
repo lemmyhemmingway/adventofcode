@@ -10,8 +10,9 @@ def part1(data: str) -> int:
         if output.hex().startswith("00000"):
             break
         i += 1
-         
+
     return i
+
 
 def part2(data: str) -> int:
     i = 0
@@ -21,10 +22,8 @@ def part2(data: str) -> int:
         if output.hex().startswith("000000"):
             break
         i += 1
-         
+
     return i
-
-
 
 
 class TestDay4(unittest.TestCase):
@@ -41,7 +40,5 @@ class TestDay4(unittest.TestCase):
         self.assertEqual(3938038, part2("ckczppom"))
 
 
-
 if __name__ == "__main__":
     unittest.main()
-        

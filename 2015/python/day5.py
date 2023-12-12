@@ -3,12 +3,15 @@ from typing import List
 
 INPUT_FILE = "2015/inputs/day5.txt"
 
+
 def _read_file(input_file: str = INPUT_FILE) -> List[str]:
     data = []
     with open(input_file) as f:
         data = [n.strip("\n") for n in f.readlines()]
 
     return data
+
+
 def part1(data):
     total = 0
     for item in data:
@@ -33,6 +36,7 @@ def part1(data):
 
     return total
 
+
 def part2(data):
     total = 0
     for item in data:
@@ -40,7 +44,7 @@ def part2(data):
         has_index = False
 
         for index in range(len(item) - 2):
-            if f'{item[index]}{item[index+1]}' in item[index+2:]:
+            if f"{item[index]}{item[index+1]}" in item[index + 2 :]:
                 has_element = True
             if item[index] == item[index + 2]:
                 has_index = True
@@ -49,6 +53,7 @@ def part2(data):
             total += 1
 
     return total
+
 
 class TestDay5(unittest.TestCase):
     def test_part1_emtpy_list(self):
@@ -70,10 +75,16 @@ class TestDay5(unittest.TestCase):
         self.assertEqual(1, part2(["qjhvhtzxzqqjkmpb"]))
 
     def test_part2_sample_input(self):
-        self.assertEqual(2, part2(["qjhvhtzxzqqjkmpb", "xxyxx", "uurcxstgmygtbstg", "ieodomkazucvgmuy"]))
+        self.assertEqual(
+            2,
+            part2(
+                ["qjhvhtzxzqqjkmpb", "xxyxx", "uurcxstgmygtbstg", "ieodomkazucvgmuy"]
+            ),
+        )
 
     def test_part2(self):
         self.assertEqual(69, part2(_read_file()))
+
 
 if __name__ == "__main__":
     unittest.main()

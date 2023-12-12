@@ -2,11 +2,13 @@ import unittest
 
 INPUT_FILE = "2015/inputs/day3.txt"
 
+
 def _read_file(input_file: str = INPUT_FILE) -> str:
     with open(input_file) as f:
         data = f.read()
 
     return data
+
 
 def part1(data: str) -> int:
     visited = {(0, 0)}
@@ -26,12 +28,13 @@ def part1(data: str) -> int:
 
     return len(visited)
 
+
 def part2(data: str) -> int:
     santa_x = 0
     santa_y = 0
     robot_x = 0
     robot_y = 0
-    santa_location = {(santa_x,santa_y)}
+    santa_location = {(santa_x, santa_y)}
 
     for key, ch in enumerate(data):
         if key % 2 == 0:
@@ -56,7 +59,6 @@ def part2(data: str) -> int:
             santa_location.add((robot_x, robot_y))
 
     return len(santa_location)
-
 
 
 class TestDay3(unittest.TestCase):
